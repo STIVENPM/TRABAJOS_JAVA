@@ -1,4 +1,4 @@
-package trabajos;
+package TRABAJOSC11;
 public class Conversion {
     public static void main (String []args){
         int celsius=7;

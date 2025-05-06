@@ -1,4 +1,4 @@
-package trabajos;
+package TRABAJOSC11;
 
 public class Billetes {
     public static void main(String[] args) {

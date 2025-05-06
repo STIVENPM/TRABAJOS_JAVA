@@ -1,4 +1,4 @@
-package trabajos;
+package TRABAJOSC11;
 public class Suma {
     public static void main (String []args){
         int $number1=7;

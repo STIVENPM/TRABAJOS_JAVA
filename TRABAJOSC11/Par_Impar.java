@@ -1,4 +1,4 @@
-package trabajos;
+package TRABAJOSC11;
 
 public class Par_Impar {
     public static void main (String []args){

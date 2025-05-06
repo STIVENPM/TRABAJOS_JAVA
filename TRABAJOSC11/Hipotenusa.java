@@ -1,4 +1,4 @@
-package trabajos;
+package TRABAJOSC11;
 
 public class Hipotenusa {
     public static void main (String []args){
