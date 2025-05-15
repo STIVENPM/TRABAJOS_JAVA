@@ -1,26 +1,26 @@
-package TRABAJOSK111;
+package TRABAJOSK11;
 
-public class five {
+public class Five {
     public static void main(String[] args) {
         String Person = "stiven";
         System.out.println(Person);
-        String veiculo = "miro si el carro esta sucio ";
+
+        String veiculo = "miro si el carro esta sucio";
         System.out.println(veiculo);
+
         boolean carroLimpio = false;
-        boolean carroSucio = true;
+        boolean tengoTiempo = true;
 
         if (carroLimpio) {
-            System.out.println("no lo tengo q lavar ");
+            System.out.println("no lo tengo que lavar");
         } else {
-            System.out.println("lo tengo q lavar ");
+            System.out.println("el carro esta sucio");
 
-            if (carroSucio) {
+            if (tengoTiempo) {
                 System.out.println("lavo el carro y salgo con el carro limpio");
             } else {
                 System.out.println("no lo lavo y salgo con el carro sucio");
             }
         }
-
-    
-}
+    }
 }
