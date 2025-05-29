@@ -18,5 +18,5 @@ public class Horas {
         System.out.println("hora fuera de rango");
     }
 }
-    
+
 }
