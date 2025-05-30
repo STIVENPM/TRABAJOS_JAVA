@@ -26,25 +26,25 @@ System.out.println("14. ¿es la estrategia divide\r\n y venceras mas eficiente q
 System.out.println("15. comparaciones");
 
 int opciones = teclado.nextInt();
- 
- long val1 =0 , val2=0 , val3=0; 
+
+long val1 =0 , val2=0 , val3=0; 
 
 switch (opciones) {
-    case 1:
-        
+case 1:
+
 for ( int n =1; n <= 100; n+=10)
- 
+
 {
 
-    val1 = 4 * n;
-    val2 = 4 * n;
-    val3 = val1 - val2;
+val1 = 4 * n;
+val2 = 4 * n;
+val3 = val1 - val2;
 
 System.out.printf("n = %d, val1 = %d, val2 = %d, val3 = %d%n", n , val1, val2, val3);
 
 }
 
-        break;
+break;
 
 case 2:
 
@@ -81,8 +81,8 @@ int suma = 0, i =1;
 boolean triangular = false;
 while (suma < num) {
 
-    suma +=i;
-    i++; 
+ suma +=i;
+i++;
 }
 
 triangular = (suma ==num);
@@ -110,8 +110,8 @@ case 8:
 int[] arr = {4,7,1,9,3,2};
 int max = arr[0], min = arr[0];
 for (int j = 1; j < arr.length; j++) {
-if (arr[j] > max) max = arr[j]; 
-if (arr[j] < min) min = arr[j];  
+if (arr[j] > max) max = arr[j];
+if (arr[j] < min) min = arr[j];
 }
 System.out.printf("maximo = %d, minimo = %d,%n", max, min);
 break;
