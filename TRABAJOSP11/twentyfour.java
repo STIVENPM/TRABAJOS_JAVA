@@ -1,26 +1,13 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
-public class twentyfour {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+public class TwentyFour {
+    public static todos Todos = new todos(); // No se usa directamente para la lógica, pero mantiene la estructura
 
-         int S = 1;
-
+    public static void twentyFour() {
+        int S = 1;
         while (S < 1000) {
             System.out.println(S);
             S = (S * S) + 1;
         }
-
-
-
-
-
-
-
-
-
-        SP.close();
     }
-    
 }

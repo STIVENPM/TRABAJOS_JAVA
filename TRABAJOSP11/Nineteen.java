@@ -1,20 +1,15 @@
-package TRABAJOSP11; 
-import java.util.Scanner;
+package TRABAJOSP11;
 
 public class Nineteen {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+    public static todos Todos = new todos();
 
-
-        
-        int N = 2; 
+    public static void nineteen() {
+        int N = 2;
         System.out.println(N);
 
         for (int K = 1; K <= 4; K++) {
             N = N + 2;
             System.out.println(N);
         }
-
-        SP.close();
     }
 }

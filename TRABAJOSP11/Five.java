@@ -1,25 +1,10 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
 public class Five {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double HL;
-        double TH; 
-        double P;  
+    public static todos Todos = new todos();
 
-        System.out.print("Ingrese las horas laboradas en el mes: ");
-        HL = sc.nextInt();
-
-        System.out.print("Ingrese la tarifa por hora: ");
-        TH = sc.nextInt();
-
-        P = HL * TH;
-
+    public static void five() {
+        double P = Todos.a * Todos.b;
         System.out.println("El total a pagar es: " + P);
-
-        sc .close();
     }
-    
 }
-

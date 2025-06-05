@@ -1,36 +1,18 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
 public class Eleven {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+    public static todos Todos = new todos();
 
-        System.out.println("produccion lunes");
-        int PL = SP.nextInt();
-        System.out.println("produccion martes");
-        int PMA = SP.nextInt();
-        System.out.println("produccion miercoles");
-        int PMI = SP.nextInt();
-        System.out.println("produccion jueves");
-        int PJU = SP.nextInt();
-        System.out.println("produccion viernes");
-        int PV = SP.nextInt();
-        System.out.println("produccion sabado");
-        int PS = SP.nextInt();
-      
-        int PT = PL + PMA + PMI + PJU + PV + PS;
+    public static void eleven() {
+        int PT = Todos.A + Todos.B + Todos.C + Todos.D + Todos.E + Todos.F;
         System.out.println("produccion total " + PT);
 
         int PP = PT / 6;
         System.out.println("promedio de produccion: " + PP);
-        if( PP>=100){
-            System.out.println("recibira inceentivos");
-            }
-            else{ 
-                System.out.println("no recibira incentivos");
-            }
-
-
-    SP.close();
-}
+        if (PP >= 100) {
+            System.out.println("recibira incentivos");
+        } else {
+            System.out.println("no recibira incentivos");
+        }
+    }
 }

@@ -1,36 +1,18 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
-public class eighteen {
-    public static void main(String[] args) {    
-        Scanner SP = new Scanner(System.in);
+public class Eighteen {
+    public static todos Todos = new todos();
 
-
-        System.out.println("ingrese numero entero");
-        int NE = SP.nextInt();
-
-        int Q = NE / 2;        
-        int R = NE - (Q * 2); 
-        String MSG = "";      
+    public static void eighteen() {
+        int Q = Todos.A / 2;
+        int R = Todos.A - (Q * 2);
+        String MSG = "";
 
         if (R == 0) {
             MSG = "es par";
         } else {
             MSG = "es impar";
         }
-
         System.out.println(MSG);
-
-
-
-
-
-
-
-
-
-
-SP.close();
     }
-    
 }

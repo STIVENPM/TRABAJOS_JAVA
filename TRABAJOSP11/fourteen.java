@@ -1,49 +1,43 @@
 package TRABAJOSP11;
 
-import java.util.Scanner;
+public class Fourteen  {
+    public static todos Todos = new todos();
 
-public class fourteen {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
-
-        System.out.println("ingrese un numero del 1 al 10:");
-        int NE = SP.nextInt();
+    public static void fourteen() {
         String ER = "";
 
-        if (NE == 1) {
-            ER = " I ";
+        switch (Todos.A) {
+            case 1:
+                ER = " I ";
+                break;
+            case 2:
+                ER = " II";
+                break;
+            case 3:
+                ER = " III";
+                break;
+            case 4:
+                ER = " IV";
+                break;
+            case 5:
+                ER = " V";
+                break;
+            case 6:
+                ER = " VI";
+                break;
+            case 7:
+                ER = " VII ";
+                break;
+            case 8:
+                ER = " VIII ";
+                break;
+            case 9:
+                ER = " IX ";
+                break;
+            case 10:
+                ER = " X ";
+                break;
         }
-        if (NE == 2) {
-            ER = " II";
-        }
-        if (NE == 3) {
-            ER = " III";
-        }
-        if (NE == 4) {
-            ER = " IV";
-        }
-        if (NE == 5) {
-            ER = " V";
-        }
-        if (NE == 6) {
-            ER = " VI";
-        }
-        if (NE == 7) {
-            ER = " VII ";
-        }
-        if (NE == 8) {
-            ER = " VIII ";
-        }
-        if (NE == 9) {
-            ER = " IX ";
-        }
-        if (NE == 10) {
-            ER = " X ";
-        }
-
-        System .out.println("el numero " + NE + " en romano es " + ER + "");
-
-SP.close();
+        System.out.println("el numero " + Todos.A + " en romano es " + ER + "");
     }
-    
 }

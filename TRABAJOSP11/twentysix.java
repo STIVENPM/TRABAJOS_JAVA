@@ -1,11 +1,10 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
-public class twentysix {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+public class TwentySix {
+    public static todos Todos = new todos(); 
 
-        int A = 0,B = 1, C = A + B;
+    public static void twentySix() {
+        int A = 0, B = 1, C = A + B;
 
         System.out.print(A + ", " + B);
 
@@ -14,14 +13,7 @@ public class twentysix {
             A = B;
             B = C;
             C = A + B;
-
-
-
-
-
-
-
-        SP.close();
-}
-}
+        }
+        System.out.println(); 
+    }
 }

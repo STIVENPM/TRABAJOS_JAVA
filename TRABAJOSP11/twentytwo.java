@@ -1,25 +1,13 @@
 package TRABAJOSP11;
-import java.util.Scanner;
-public class twentytwo {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
 
-        int PN, SN, P = 0;
+public class TwentyTwo {
+    public static todos Todos = new todos();
 
-        System.out.print("ingrese el primer numero ");
-        PN = SP.nextInt();
-
-        System.out.print("ingrese el segundo numero ");
-        SN = SP.nextInt();
-
-        for (int k = 1; k <= SN; k++) {
-            P = P + PN;
+    public static void twentyTwo() {
+        int producto = 0;
+        for (int k = 1; k <= Todos.B; k++) { 
+            producto += Todos.A; 
         }
-
-        System.out.println("el producto es: " + P);
-
-    
-SP.close();
+        System.out.println("el producto es: " + producto);
     }
-    
 }

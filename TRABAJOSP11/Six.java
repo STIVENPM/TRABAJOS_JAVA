@@ -1,29 +1,11 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
 public class Six {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static todos Todos = new todos();
 
-        System.out.print("ingrese one ");
-        double a = sc.nextDouble();
-      
-       
-        System.out.print("ingrese two ");
-        double b = sc.nextDouble();
-
-        System.out.print("ingrese three");
-        double c = sc.nextDouble();
-    
-        
-        double LS,AT;
-        LS = (a + b + c) / 2;
-        AT = Math.sqrt(LS * (LS - a) * (LS - b) * (LS - c));
-        System.out.println("el area ddel triangulo es  " + AT);
-        AT = sc.nextInt();
-        
-    
-sc .close();
+    public static void six() {
+        double LS = (Todos.a + Todos.b + Todos.c) / 2;
+        double AT = Math.sqrt(LS * (LS - Todos.a) * (LS - Todos.b) * (LS - Todos.c));
+        System.out.println("El area del triangulo es: " + AT);
+    }
 }
-}
-

@@ -1,24 +1,18 @@
 package TRABAJOSP11;
-import java .util.Scanner;
 
 public class TwentyThree {
-    public static void main(String[]args){
-        Scanner SP = new Scanner(System.in);
+    public static todos Todos = new todos(); // No se usa directamente para la lógica, pero mantiene la estructura
 
-  for (int k = 1; k <= 10; k++) {
-            int Q = k / 2;        
-            int R = k - (Q * 2);   
+    public static void twentyThree() {
+        for (int k = 1; k <= 10; k++) {
+            int Q = k / 2;
+            int R = k - (Q * 2);
 
             if (R == 0) {
-                continue; 
+                continue; // Si es par, saltar a la siguiente iteración
             } else {
-                System.out.println(k); 
+                System.out.println(k);
             }
-
-
-
-
-        }
-SP.close();
         }
     }
+}

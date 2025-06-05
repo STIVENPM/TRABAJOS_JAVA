@@ -1,31 +1,17 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
 public class Teen {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
-        System.out.println("ingrese primera edad");
-        int E1 = SP.nextInt();
+    public static todos Todos = new todos();
 
-        System.out.println("ingrese segunda edad");
-        int E2 = SP.nextInt();
-
-        if(E1>E2){
-            System.out.println("la primera edad es mayor");
-            int DE = E1-E2;           
-             System.out.println("por: " + DE  + "años" );
+    public static void teen() {
+        if (Todos.A > Todos.B) {
+            System.out.println("La primera edad es mayor");
+            System.out.println("Por: " + (Todos.A - Todos.B) + " años");
+        } else if (Todos.B > Todos.A) {
+            System.out.println("La segunda edad es mayor");
+            System.out.println("Por: " + (Todos.B - Todos.A) + " años");
+        } else {
+            System.out.println("Ambas edades son iguales");
         }
-        else if(E2>E1){
-            System.out.println("la segunda edad es mayor");
-            int DE = E2-E1;
-            System.out.println("por: "+DE+"años");
-            }
-            else {
-                System.out.println("ambas edades son iguales");
-            }
-            SP.close();
-        }
-
-
-
+    }
 }

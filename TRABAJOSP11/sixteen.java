@@ -1,47 +1,46 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
-public class sixteen {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+public class Sixteen {
+    public static todos Todos = new todos();
 
-        System.out.println("ingresa numero entero");
-        int NE = SP.nextInt();
+    public static void sixteen() {
         String V = "";
 
-        if (NE == 1) {
-            V = "A";
-        } else if (NE == 2) {
-            V = "B";
-        } else if (NE == 3) {
-            V = "C";
-        } else if (NE == 4) {
-            V = "D";
-        } else if (NE == 5) {
-            V = "E";
-        } else if (NE == 6) {
-            V = "F";
-        } else if (NE == 7) {
-            V = "G";
-        } else if (NE == 8) {
-            V = "H";
-        } else if (NE == 9) {
-            V = "I";
-        } else if (NE == 10) {
-            V = "J";
-        } else {
-            V = "numero fuera de rango";
+        switch (Todos.A) {
+            case 1:
+                V = "A";
+                break;
+            case 2:
+                V = "B";
+                break;
+            case 3:
+                V = "C";
+                break;
+            case 4:
+                V = "D";
+                break;
+            case 5:
+                V = "E";
+                break;
+            case 6:
+                V = "F";
+                break;
+            case 7:
+                V = "G";
+                break;
+            case 8:
+                V = "H";
+                break;
+            case 9:
+                V = "I";
+                break;
+            case 10:
+                V = "J";
+                break;
+            default:
+                V = "numero fuera de rango";
+                break;
         }
-
-        System.out.println("el numero ingrado es: " + NE + " y vale  " + V);
-
-
-  
-
-
-
-
-        SP.close();
+        System.out.println("el numero ingrado es: " + Todos.A + " y vale " + V);
     }
-    
 }

@@ -1,35 +1,22 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
-public class twelve {
-    public static void main(String[]args){
-        Scanner SP = new Scanner(System.in);
+public class Twelve  {
+    public static todos Todos = new todos();
 
-        System.out.println("primer numero entero");
-        int N1= SP.nextInt();
-        System.out.println("segundo numero entero");
-        int N2= SP.nextInt();
-        System.out.println("tercer numero entero");
-        int N3= SP.nextInt();
-
-        if(N1>N2 && N1>N3){
+    public static void twelve() {
+        int NM;
+        if (Todos.A > Todos.B && Todos.A > Todos.C) {
             System.out.println("el primer numero es el mayor");
-            int NM= N1;
+            NM = Todos.A;
             System.out.println("numero: " + NM);
-            }
-            else if(N2>N3){
-                System.out.println("el segundo numero es el mayor");
-                int NM= N2;
-                System.out.println("numero: " + NM);
-            }
-            else{
-                System.out.println("el tercer numero es el mayor");
-                int NM= N3;
-                System.out.println("numero: " + NM);    
-            }
-
-        SP.close();
+        } else if (Todos.B > Todos.C) {
+            System.out.println("el segundo numero es el mayor");
+            NM = Todos.B;
+            System.out.println("numero: " + NM);
+        } else {
+            System.out.println("el tercer numero es el mayor");
+            NM = Todos.C;
+            System.out.println("numero: " + NM);
+        }
     }
-
-    
 }

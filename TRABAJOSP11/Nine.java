@@ -1,24 +1,14 @@
 package TRABAJOSP11;
-import java.util.Scanner;
 
 public class Nine {
-    public static void main(String[] args) {
-        Scanner SP = new Scanner(System.in);
+    public static todos Todos = new todos();
 
-        System.out.println("ingresa el año de nacimiento:");
-        int an = SP.nextInt();
-    
-        int aa = 2025;
-
-        int e = aa - an;
-
+    public static void nine() {
+        int e = 2025 - Todos.A;
         if (e > 17) {
-            System.out.println("debe solicitar su cedula");
+            System.out.println("Debe solicitar su cedula");
         } else {
-            System.out.println("no debe solicitar su cedula aun");
+            System.out.println("No debe solicitar su cedula aun");
         }
-    
-        SP .close();
     }
-    
 }
