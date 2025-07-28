@@ -12,8 +12,13 @@ public class Main {
             System.out.println("1. elige el numero de la region y el centro y sede");
             System.out.println("2. asignacion de hambientes a sede");
             System.out.println("3. asignacion de aprendices a el ambiente y el centro y sede");
-            System.out.println("4. instructor asisgnado a un ambiente");
-            System.out.println("5. Salir");
+            System.out.println("4. instructor asisgnado a linea ");
+            System.out.println("5. asignar horario a instructor ");
+            System.out.println("6. asignar cordinador a un instructor ");
+            System.out.println("7. descripcion de los ambientes ");
+            System.out.println("8. asignacion de horarios a aprendices");
+            System.out.println("9. asignacion de intructor a ambiente");
+            System.out.println("0. Salir");
             opcion = sc.nextLine();
 
             switch (opcion) {
@@ -30,25 +35,27 @@ public class Main {
                     break;
 
                     case "4":
-                    Salida.instructorA();
+                    Salida.instructorL();
                     break;
 
                     case "5":
+                    Salida.horarioI();
                     break;
 
                     case "6":
+                    Salida.cordinadorI();
                     break;
 
                     case "7":
+                    Salida.descripcionA();
                     break;
 
                     case "8":
+                    Salida.horarioA();
                     break;
 
                     case "9":
-                    break;
-
-                    case "10":
+                    Salida.instructorA();
                     break;
             
                     default:
