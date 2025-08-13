@@ -206,7 +206,7 @@ public static void instructorL() {
 
     // Asigna un centro SENA aleatorio a cada instructor
     for (int i = 0; i < numeroI; i++) {
-        int indiceCentro = random.nextInt(centrosSena.length); // Índice aleatorio
+        int indiceCentro = random.nextInt(centrosSena.length); 
         String centroAsignado = centrosSena[indiceCentro];     // Centro correspondiente
 
         // Muestra el instructor y el centro asignado
@@ -232,13 +232,13 @@ public static void horarioI() {
         int indiceHorario = random.nextInt(horarioI.length); // Horario aleatorio
         String horarioAsignado = horarioI[indiceHorario];
 
-        int ambienteAsignado = random.nextInt(3) + 1; // Número de ambiente aleatorio (1 a 3)
+        int ambienteAsignado = random.nextInt(3) + 1; 
 
         // Muestra asignación
         System.out.println("Instructor " + (i + 1) + " asignado:");
         System.out.println(" Ambiente: " + ambienteAsignado);
         System.out.println(" Horario asignado: " + horarioAsignado);
-        System.out.println("---------------------------");
+      
     }
 }
 
@@ -255,8 +255,8 @@ public static void cordinadorI() {
 
     // Asigna coordinadores aleatorios
     for (int i = 0; i < cantidad; i++) {
-        int indiceCoordinador = random.nextInt(coordinadoresSena.length); // Índice aleatorio
-        String coordinadorAsignado = coordinadoresSena[indiceCoordinador]; // Coordinador correspondiente
+        int indiceCoordinador = random.nextInt(coordinadoresSena.length); 
+        String coordinadorAsignado = coordinadoresSena[indiceCoordinador]; 
 
         // Muestra asignación
         System.out.println("Instructor " + (i + 1) + " asignado:");
@@ -322,8 +322,8 @@ public static void instructorA() {
 
     // Asigna ambientes aleatorios
     for (int i = 0; i < cantidad; i++) {
-        int ambienteAsignado = random.nextInt(3) + 1; // Ambiente entre 1 y 3
-        String ambiente = ambientesFormacion[ambienteAsignado - 1]; // Ambiente correspondiente
+        int ambienteAsignado = random.nextInt(3) + 1; 
+        String ambiente = ambientesFormacion[ambienteAsignado - 1];
 
         // Muestra asignación
         System.out.println("Instructor " + (i + 1) + " asignado:");
