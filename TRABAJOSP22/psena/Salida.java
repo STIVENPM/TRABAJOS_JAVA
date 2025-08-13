@@ -108,7 +108,7 @@ static String[] ambientesFormacion = {
 
         String centroElegido = centrosSena[centroSeleccionado - 1];
 
-        System.out.println("\n--- Resultado ---");
+        System.out.println("--- Resultado ---");
         System.out.println("Region elegida: " + regionElegida);
         System.out.println("Centro de formacion elegido: " + centroElegido);
         System.out.println();
